@@ -1,0 +1,318 @@
+package com.company.motorph;
+
+import java.text.DecimalFormat;
+import java.time.Duration;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+public class MOON_MotorPH {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("HH:mm");
+        DecimalFormat decimalFormat = new DecimalFormat("#.00");
+
+        //Declared variables
+        int basicSalary = 0;
+        double hourlyRate = 0, weeklySalary = 0;
+        double sss = 0, philHealth = 0, pagIbig = 0, witholdingTax = 0;
+
+        System.out.print("Enter Employee Number: ");
+
+        //Employee details presentation
+        int employeeNumber = scan.nextInt();
+
+        switch (employeeNumber) {
+            case 10001:
+                System.out.println("\nEmployee Number: 10001");
+                System.out.println("Name: Jose Crisostomo");
+                System.out.println("Birthday: February 14, 1988");
+                System.out.println("Position: HR Manager");
+                hourlyRate = 373.04;
+                basicSalary = 62670;
+                break;
+            case 10002:
+                System.out.println("\nEmployee Number: 10002");
+                System.out.println("Name: Christian Mata");
+                System.out.println("Birthday: October 21, 1987");
+                System.out.println("Position: Account Team Leader");
+                hourlyRate = 255.80;
+                basicSalary = 42975;
+                break;
+            case 10003:
+                System.out.println("\nEmployee Number: 10003");
+                System.out.println("Name: Brad San Jose");
+                System.out.println("Birthday: March 15, 1996");
+                System.out.println("Position: HR Team Leader");
+                hourlyRate = 255.80;
+                basicSalary = 42975;
+                break;
+            case 10004:
+                System.out.println("\nEmployee Number: 10004");
+                System.out.println("Name: Anthony Salcedo");
+                System.out.println("Birthday: September 14, 1993");
+                System.out.println("Position: Payroll Manager");
+                hourlyRate = 362.05;
+                basicSalary = 60825;
+                break;
+            case 10005:
+                System.out.println("\nEmployee Number: 10005");
+                System.out.println("Name: Alice Romualdez");
+                System.out.println("Birthday: May 14, 1992");
+                System.out.println("Position: HR Rank and File");
+                hourlyRate = 133.93;
+                basicSalary = 22500;
+                break;
+            case 10006:
+                System.out.println("\nEmployee Number: 10006");
+                System.out.println("Name: Rosie Atienza");
+                System.out.println("Birthday: September 24, 1948");
+                System.out.println("Position: HR Rank and File");
+                hourlyRate = 133.93;
+                basicSalary = 22500;
+                break;
+            case 10007:
+                System.out.println("\nEmployee Number: 10007");
+                System.out.println("Name: Martha Farala");
+                System.out.println("Birthday: January 11, 1942");
+                System.out.println("Position: Payroll Rank and File");
+                hourlyRate = 142.86;
+                basicSalary = 24000;
+                break;
+            case 10008:
+                System.out.println("\nEmployee Number: 10008");
+                System.out.println("Name: Leila Martinez");
+                System.out.println("Birthday: July 11, 1970");
+                System.out.println("Position: Payroll Rank and File");
+                hourlyRate = 142.86;
+                basicSalary = 24000;
+                break;
+            case 10009:
+                System.out.println("\nEmployee Number: 10009");
+                System.out.println("Name: Allison San Jose");
+                System.out.println("Birthday: June 24, 1986");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 133.93;
+                basicSalary = 22500;
+                break;
+            case 10010:
+                System.out.println("\nEmployee Number: 10010");
+                System.out.println("Name: Cydney Rosario");
+                System.out.println("Birthday: October 6, 1996");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 133.93;
+                basicSalary = 22500;
+                break;
+            case 10011:
+                System.out.println("\nEmployee Number: 10011");
+                System.out.println("Name: Josie Lopez");
+                System.out.println("Birthday: January 14, 1937");
+                System.out.println("Position: Payroll Team Leader");
+                hourlyRate = 229.02;
+                basicSalary = 38475;
+                break;
+            case 10012:
+                System.out.println("\nEmployee Number: 10012");
+                System.out.println("Name: Selena De Leon");
+                System.out.println("Birthday: February 20, 1945");
+                System.out.println("Position: Account Team Leader");
+                hourlyRate = 249.11;
+                basicSalary = 41850;
+                break;
+            case 10013:
+                System.out.println("\nEmployee Number: 10013");
+                System.out.println("Name: Fredrick Romualdez");
+                System.out.println("Birthday: March 10, 1985");
+                System.out.println("Position: Account Manager");
+                hourlyRate = 377.98;
+                basicSalary = 63500;
+                break;
+            case 10014:
+                System.out.println("\nEmployee Number: 10014");
+                System.out.println("Name: Mark Bautista");
+                System.out.println("Birthday: February 12, 1961");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 138.39;
+                basicSalary = 23250;
+                break;
+            case 10015:
+                System.out.println("\nEmployee Number: 10015");
+                System.out.println("Name: Darlene Lazaro");
+                System.out.println("Birthday: November 25, 1985");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 138.39;
+                basicSalary = 23250;
+                break;
+            case 10016:
+                System.out.println("\nEmployee Number: 10016");
+                System.out.println("Name: Kolby Delos Santos");
+                System.out.println("Birthday: February 26, 1980");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 142.86;
+                basicSalary = 24000;
+                break;
+            case 10017:
+                System.out.println("\nEmployee Number: 10017");
+                System.out.println("Name: Vella Santos");
+                System.out.println("Birthday: December 31, 1983");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 133.93;
+                basicSalary = 22500;
+                break;
+            case 10018:
+                System.out.println("\nEmployee Number: 10018");
+                System.out.println("Name: Tomas Del Rosario");
+                System.out.println("Birthday: December 18, 1978");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 133.93;
+                basicSalary = 22500;
+                break;
+            case 10019:
+                System.out.println("\nEmployee Number: 10019");
+                System.out.println("Name: Jacklyn Tolentino");
+                System.out.println("Birthday: May 19, 1944");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 142.86;
+                basicSalary = 24000;
+                break;
+            case 10020:
+                System.out.println("\nEmployee Number: 10020");
+                System.out.println("Name: Percival Gutierrez");
+                System.out.println("Birthday: December 18, 1970");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 147.32;
+                basicSalary = 24750;
+                break;
+            case 10021:
+                System.out.println("\nEmployee Number: 10021");
+                System.out.println("Name: Garfield Manalaysay");
+                System.out.println("Birthday: August 28, 1966");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 147.32;
+                basicSalary = 24750;
+                break;
+            case 10022:
+                System.out.println("\nEmployee Number: 10022");
+                System.out.println("Name: Lizeth Villegas");
+                System.out.println("Birthday: December 12, 1981");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 142.86;
+                basicSalary = 24000;
+                break;
+            case 10023:
+                System.out.println("\nEmployee Number: 10023");
+                System.out.println("Name: Carol Ramos");
+                System.out.println("Birthday: August 20, 1978");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 133.93;
+                basicSalary = 22500;
+                break;
+            case 10024:
+                System.out.println("\nEmployee Number: 10024");
+                System.out.println("Name: Emelia Maceda");
+                System.out.println("Birthday: April 14, 1963");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 133.93;
+                basicSalary = 22500;
+                break;
+            case 10025:
+                System.out.println("\nEmployee Number: 10025");
+                System.out.println("Name: Delia Aguilar");
+                System.out.println("Birthday: January 27, 1939");
+                System.out.println("Position: Account Rank and File");
+                hourlyRate = 133.93;
+                basicSalary = 22500;
+                break;
+            default:
+                System.out.println("Invalid Employee Number");
+                System.exit(0);
+
+        }
+
+        System.out.println("Hourly Rate: PHP"+ hourlyRate);
+        System.out.println("Basic Salary: PHP"+ basicSalary);
+
+        //Salary calculation based on hours worked
+        System.out.print("\nEnter Time-in (Military Time hh:mm): ");
+        LocalTime timeIn = LocalTime.parse(scan.next(), timeFormat);
+
+        System.out.print("Enter Time-out (Military Time hh:mm): ");
+        LocalTime timeOut = LocalTime.parse(scan.next(), timeFormat);
+
+        long workingHours = Duration.between(timeIn, timeOut).toHours();
+        double dailySalary = hourlyRate*workingHours;
+        weeklySalary = dailySalary*5;
+
+        //SSS calculation
+        if (basicSalary > 24750) {
+            sss = 1125;
+        } else if (basicSalary >= 24250 && basicSalary <= 24750) {
+            sss = 1102.50;
+        } else if (basicSalary >= 23750 && basicSalary <= 24250) {
+            sss = 1080.00;
+        } else if (basicSalary >= 23250 && basicSalary <= 23750) {
+            sss = 1057.50;
+        } else if (basicSalary >= 22750 && basicSalary <= 23250) {
+            sss = 1035.00;
+        } else if (basicSalary >= 22250 && basicSalary <= 22750) {
+            sss = 1012.50;
+        } else if (basicSalary >= 21750 && basicSalary <= 22250) {
+            sss = 990.00;
+        } else if (basicSalary >= 21250 && basicSalary <= 21750) {
+            sss = 967.50;
+        } else if (basicSalary >= 20750 && basicSalary <= 21250) {
+            sss = 945.00;
+        } else if (basicSalary >= 20250 && basicSalary <= 20750) {
+            sss = 922.50;
+        } else if (basicSalary >= 19750 && basicSalary <= 20250) {
+            sss = 900.00;
+        }
+
+        //Philhealth Calculation
+        philHealth = (basicSalary * 0.03) / 2;
+
+        //Pag-Ibig calculation
+        if (basicSalary == 1000 && basicSalary <= 1500) {
+            pagIbig = basicSalary * 0.01;
+        } else if (basicSalary > 1500) {
+            pagIbig = basicSalary * 0.02;
+        }
+
+        if (pagIbig > 100) {
+            pagIbig = 100;
+        }
+
+        double deductions = sss + philHealth + pagIbig;
+        double taxableIncome = basicSalary - deductions;
+
+        //Witholding tax calculation
+        if (taxableIncome >= 20833 && taxableIncome < 33333) {
+            witholdingTax = (taxableIncome - 20833) * 0.2;
+        } else if (taxableIncome >= 33333 && taxableIncome < 66667) {
+            witholdingTax = 2500 + ((taxableIncome - 33333) * 0.25);
+        } else if (taxableIncome >= 66667 && taxableIncome < 166667) {
+            witholdingTax = 10833 + ((taxableIncome - 66667) * 0.3);
+        } else if (taxableIncome >= 166667 && taxableIncome < 666667) {
+            witholdingTax = 40833.33 + ((taxableIncome - 166667) * 0.32);
+        } else if (taxableIncome >= 666667) {
+            witholdingTax = 200833.33 + ((taxableIncome - 666667) * 0.35);
+        } else {
+            witholdingTax = 0;
+        }
+
+        double netSalary = taxableIncome - witholdingTax;
+
+        System.out.println("\nHours Worked: "+ workingHours);
+        System.out.println("Daily Salary: PHP"+ decimalFormat.format(dailySalary));
+        System.out.println("Weekly Salary: PHP"+ decimalFormat.format(weeklySalary));
+        System.out.println("Basic Salary: PHP"+ decimalFormat.format(basicSalary));
+        System.out.println("SSS Contribution: PHP"+ decimalFormat.format(sss));
+        System.out.println("PhilHealth Contribution: PHP"+ decimalFormat.format(philHealth));
+        System.out.println("Pag-Ibig Contribution: PHP"+ decimalFormat.format(pagIbig));
+        System.out.println("Total Deductions: PHP"+ decimalFormat.format(deductions));
+        System.out.println("Taxable Income: PHP"+ decimalFormat.format(taxableIncome));
+        System.out.println("Witholding Tax: PHP"+ decimalFormat.format(witholdingTax));
+        System.out.println("\nNet Monthly Salary: PHP"+ decimalFormat.format(netSalary));
+
+    }
+}
